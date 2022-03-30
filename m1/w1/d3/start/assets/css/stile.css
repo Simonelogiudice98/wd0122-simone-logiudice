@@ -1,0 +1,126 @@
+/* IMPOSTAZIONI GENERALI */
+
+/* HEADER */
+
+header {
+ text-align: center;
+ background-color: aqua;
+ font-weight: bold;
+ font-family: raleway;
+ font-size: 30px;
+}
+ 
+span{
+    background-color: white;
+    color: aqua;
+    
+}
+
+/* MAIN */
+
+main{
+    padding: 0 20px;
+}
+
+hr{
+    border-style: dashed;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-family: raleway;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: rgb(24, 24, 196);
+}
+
+h3{
+    font-size: 16px;
+    font-family: raleway;
+    color: black;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.titolo{
+    color: black;
+}
+
+figure{
+    text-align: center;
+}
+
+address{
+    text-align: center;
+    margin-block: 7px;
+    font-weight: bold;
+    
+}
+
+body{
+    text-align: center;
+   
+}
+
+.recapiti{
+    color: red;
+}
+
+.epicode{
+    color: red;
+}
+
+.evidenziato{
+    background-color: aqua;
+}
+
+.p1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 10px;
+}
+
+ 
+blockquote{
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 175px;
+    margin-right: 175px;
+}
+
+strong{
+    color: aqua;
+}
+
+li{
+    margin: 5px;
+    
+}
+
+
+
+/* ELEMENTI NEL MAIN */
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(46, 44, 44);
+    color: white;
+
+}
+
+.tasti{
+    color: yellow;
+}
+
+.cv{
+    color: red;
+}
+
+dd{
+    margin-block: 5px;
+}
