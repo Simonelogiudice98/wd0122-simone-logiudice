@@ -1,0 +1,278 @@
+/* IMPOSTAZIONI GENERALI */
+
+
+body{
+    background-image: url(../img/sfondo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+hr{
+    display: none;
+}
+
+
+/* HEADER */
+
+header{
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(18, 145, 145);
+    border-style:inset;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 6vw ;
+    padding-right: 6vw ;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 70vw;
+
+    
+}
+
+header li{
+    list-style-type:none;
+}
+
+header li::before{
+    content: "\21DB" ;
+    color: white;
+}
+
+header li::after{
+    content: "\21DA";
+    color: white;
+}
+
+header a{
+    color: white;
+}
+
+.intestazione{
+    color: white;
+}
+
+p{
+    font-family:poppins;
+    
+}
+
+ul , ol{
+    font-family: poppins;
+}
+h1 {
+    font-size: 25px;
+    
+}
+
+strong{
+color:purple ;
+font-weight: bold;
+}
+/* MAIN */
+
+main{
+   background-color:antiquewhite ;
+    border-style: inset white;
+    border-radius: 5px;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    width: 70vw;
+    
+    
+    
+}
+
+.articolo {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.numero1{
+    margin-bottom: 8px;
+}
+
+.numero2{
+    margin-bottom: 10px;
+}
+
+section ul{
+    margin-bottom: 12px;
+}
+
+.titoletto{
+    font-weight: bold;
+    font-family: poppins;
+    margin-bottom: 6px;
+}
+
+.par2{
+    margin-bottom: 12px;
+}
+
+section ol{
+    margin-bottom: 10px;
+}
+
+
+
+iframe{
+    border-radius: 10px;
+}
+
+.articolo{
+    color: grey;
+    
+}
+
+ 
+code{
+    border-radius: 5px;
+    background-color: grey;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+caption{
+    font-weight: bold;
+}
+
+table{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: rgb(40, 40, 136);
+    width: 70vw;
+    
+}
+    
+    
+    
+
+thead{
+    background-color: rgb(40, 40, 136);
+    color: white;
+    
+}
+
+.riga1 , .riga2{
+    background-color: grey;
+}
+
+th, td{
+    text-align: center;
+    padding: 10px;
+}
+
+.par3{
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+
+iframe{
+    width: 70vw;
+}
+
+/* FORM */
+
+.novita{
+    margin: 15px 0;
+    background-color: rgb(196, 191, 191);
+    border-radius: 0px;
+    width: 70vw;
+    padding: 20px 0;
+
+}
+
+.novita h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.novita div{
+    padding: 10px;
+}
+
+
+/* ELEMENTI NELL' ASIDE */
+
+.sottotitolo{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 15px 0;
+
+}
+
+.art1{
+    border-radius: 0;
+    background-color: rgb(196, 191, 191);
+    margin: 10px 0;
+    padding: 25px;
+}
+
+.art2{
+    border-radius: o;
+    background-color: rgb(196, 191, 191);
+    margin: 10px 0;
+    padding: 25px;
+}
+
+.art3{
+    border-radius: 0;
+    background-color: rgb(196, 191, 191);
+    margin: 10px 0;
+    padding: 25px;
+}
+
+.data1 , .data2 , .data3{
+    text-align: right;
+}
+
+.par4 , .par5 , .par6{
+    margin-top: 7px;
+    margin-bottom: 5px;
+    
+}
+
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background-color: rgb(83, 83, 215);
+    border-radius: 0px;
+    box-shadow: 0 0 10px;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 6vw;
+    padding-right:6vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    width: 70vw;
+    color: white;
+}
+
+.par7{
+    margin-bottom: 10px;
+    
+}
+
+footer a{
+    color: rgb(227, 27, 227);
+}
+
