@@ -1,0 +1,35 @@
+@media screen and (max-width: 285px ) {
+    header div img{
+        width: 50vw;
+    }
+
+    .tabella{
+        overflow: scroll;
+    }
+}
+
+
+@media print and (max-width: 2480px){
+    header{
+        display: none;
+    }
+
+    .form{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    iframe{
+        display: none;
+    }
+    
+    footer{
+        display: none;
+
+    }
+
+    
+}
