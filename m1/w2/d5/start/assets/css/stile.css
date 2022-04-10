@@ -370,8 +370,12 @@ address:not(.indirizzi){
         line-height: 1.8;
     }
 
-    .navbar-desktop{
-        display:none;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
     }
 
     h1{
@@ -387,6 +391,9 @@ address:not(.indirizzi){
         width: 80vw;
     }
 
+    #navbar-desktop{
+        display: none;
+    }
     
     
 }
@@ -396,17 +403,37 @@ address:not(.indirizzi){
         display: none;
     }
 
+    .navbar{
+        display: none;
+    }
+
+    #navbar-desktop li{
+        display: inline-block;
+    }
+      
+    #navbar-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+
+    }
+
     
-    /* .colonne-f , .colonne-f2{
-        flex-grow: 1;
-       
-    } */
+    
     #contenitore-form{
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-evenly;
         font-size: 15px;
         
+        
+    }
+
+    #contenitore-form h2{
+        font-size: 25px;
     }
     
     
