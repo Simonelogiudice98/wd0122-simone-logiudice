@@ -246,7 +246,7 @@ article p{
 
 }
 
-.colonne-f{
+.colonne-f , .colonne-f2{
     padding-bottom: 10px;
     
 } 
@@ -396,8 +396,21 @@ address:not(.indirizzi){
         display: none;
     }
 
-
     
+    /* .colonne-f , .colonne-f2{
+        flex-grow: 1;
+       
+    } */
+    #contenitore-form{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 15px;
+        
+    }
+    
+    
+
     .vabene2{
         top:36px;
     }
