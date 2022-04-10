@@ -370,6 +370,10 @@ address:not(.indirizzi){
         line-height: 1.8;
     }
 
+    .navbar-desktop{
+        display:none;
+    }
+
     h1{
         text-align: center;
     }
@@ -383,9 +387,7 @@ address:not(.indirizzi){
         width: 80vw;
     }
 
-    #tabella-desktop{
-        display: none;
-    }
+    
     
 }
 
@@ -393,6 +395,8 @@ address:not(.indirizzi){
     #tabella-mobile{
         display: none;
     }
+
+
     
     .vabene2{
         top:36px;
@@ -402,6 +406,10 @@ address:not(.indirizzi){
         flex-direction: row;
     }
 
+    .coders p{
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
    h1{
        text-align: center;
    }
