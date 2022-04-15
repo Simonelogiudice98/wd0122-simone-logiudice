@@ -1,0 +1,208 @@
+:root{
+    --colore-night:greenyellow;
+}
+
+body{
+    background-image: url(../images/numeri.png)
+}
+
+/* calcolatrice */
+
+#tabella{
+    position: absolute;
+    border-radius: 5px;
+    top:20px;
+    left:40vw;
+    top: 80px;
+    display: grid;
+    background-color: gainsboro;
+    border:solid 3px black;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding: 20px;
+    padding-bottom: 50px;
+    gap: 15px;
+    box-shadow: 10px 10px 20px black;
+   
+    
+   
+    grid-template-areas:
+    'display display display display'
+    'b1 b2 b3 bpiu'
+    'b4 b5 b6 b-' 
+    'b7 b8 b9 bx'
+    'b0 b0 b0 bdiv' 
+    'buguale buguale buguale bdel'
+    'logo logo logo logo';
+}
+
+.nightmode #display{
+    background-color:var(--colore-night);
+}
+
+#display{
+    text-align: center;
+    border-radius: 8px;
+    grid-area: display;
+}
+
+/* grid area */
+
+.b0{
+    grid-area: b0;
+}
+.b1{
+    grid-area: b1;
+}
+.b2{
+    grid-area: b2;
+}
+.b3{
+    grid-area: b3;
+}
+.b4{
+    grid-area: b4;
+}
+.b5{
+    grid-area: b5;
+}
+.b6{
+    grid-area: b6;
+}
+.b7{
+    grid-area: b7;
+}
+.b8{
+    grid-area: b8;
+}
+.b9{
+    grid-area: b9;
+}
+
+.bpiu{
+    grid-area: bpiu;
+
+}
+.b-{
+    grid-area: b-;
+}
+.bdiviso{
+    grid-area: bdiv;
+}
+
+.bx{
+    grid-area: bx;
+}
+.buguale{
+    grid-area: buguale;
+}
+.bdel{
+    grid-area: bdel;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+/* tasti */
+
+.bottoni{
+    height: 50px;
+    background-color:white;
+    box-shadow: 10px 10px 13px black;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nightmode .bottoni{
+    background-color:greenyellow;
+}
+
+.night{
+    position: absolute;
+    left:73vw;
+    top:170px;
+    padding: 20px;
+    box-shadow: 8px 8px 15px;
+    font-size:20px;
+}
+
+
+
+.nightmode{
+    background-color:greenyellow;
+}
+
+
+.bpiu , .b- , .bdiviso , .bx{
+    font-size: 22px;
+}
+
+.buguale{
+    background-color:orange;
+}
+
+.bdel{
+    background-color:red;
+}
+
+#display{
+    font-size: 30px;
+    height: 60px;
+}
+
+
+.b1:hover{
+    transform: scale(1.3);
+}
+.b2:hover{
+    transform: scale(1.3);
+}
+.b3:hover{
+    transform: scale(1.3);
+}
+.b4:hover{
+    transform: scale(1.3);
+}
+.b5:hover{
+    transform: scale(1.3);
+}
+.b6:hover{
+    transform: scale(1.3);
+}
+.b6:hover{
+    transform: scale(1.3);
+}
+.b7:hover{
+    transform: scale(1.3);
+}
+.b8:hover{
+    transform: scale(1.3);
+}
+.b9:hover{
+    transform: scale(1.3);
+}
+.b9:hover{
+    transform: scale(1.3);
+}
+.bpiu:hover{
+    transform: scale(1.3);
+}
+.b-:hover{
+    transform: scale(1.3);
+}
+.bx:hover{
+    transform: scale(1.3);
+}
+.bdiviso:hover{
+    transform: scale(1.3);
+}
+.bdel:hover{
+    transform: scale(1.3);
+}
+.b0:hover{
+transform: scale(1.1);
+}
+.buguale:hover{
+    transform: scale(1.1);
+}

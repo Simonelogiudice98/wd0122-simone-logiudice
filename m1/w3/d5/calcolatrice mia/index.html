@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Calcolatrice</title>
+</head>
+<body>
+    
+    <div id="tabella">
+
+        <input type="text" id="display">
+        <button class="b1 bottoni" onclick="scegliNumero(this);notifica(this)">1</button>
+        <button class="b2 bottoni" onclick="scegliNumero(this);notifica(this)">2</button>
+        <button class="b3 bottoni" onclick="scegliNumero(this);notifica(this)">3</button>
+        <button class="b4 bottoni" onclick="scegliNumero(this);notifica(this)">4</button>
+        <button class="b5 bottoni" onclick="scegliNumero(this);notifica(this)">5</button>
+        <button class="b6 bottoni" onclick="scegliNumero(this);notifica(this)">6</button>
+        <button class="b7 bottoni" onclick="scegliNumero(this);notifica(this)">7</button>
+        <button class="b8 bottoni" onclick="scegliNumero(this);notifica(this)">8</button>
+        <button class="b9 bottoni" onclick="scegliNumero(this);notifica(this)">9</button>
+        <button class="b0 bottoni" onclick="scegliNumero(this);notifica(this)">0</button>
+        <button class="bpiu bottoni" onclick="scegliNumero(this)">+</button>
+        <button class="b- bottoni" onclick="scegliNumero(this)">-</button>
+        <button class="bx bottoni" data-numero="*" onclick="scegliNumero(this)">x</button>
+        <button class="bdiviso bottoni" data-numero="/" onclick="scegliNumero(this)">:</button>
+        <button class="buguale bottoni" onclick="risultato()">=</button>
+        <button class="bdel bottoni" onclick="del()">del</button>
+    
+        <img class="logo" src="assets/images/logo.png">
+    </div>
+
+    <audio src="assets/audio/notification.mp4" id="notifica"></audio>
+
+    <button class="night"><i class="fas fa-moon"></i></button>
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
