@@ -1,0 +1,264 @@
+/* GENERAL */
+html{font-size: 100%;}
+
+body{font-family: 'Roboto', sans-serif;}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.5;
+}
+
+p{
+    line-height: 1.8
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+h4{
+    font-size: 0.7;}
+
+span{
+    font-size: 2.5rem;
+    color: rgb(255, 72, 0); 
+}
+
+hr{
+    width: 120px;
+    margin: 50px auto;
+}
+
+.hr-small{
+    width: 90px;
+    margin: 20px auto;
+}
+
+
+
+
+/* HEADER */
+header{
+    /* background-image: url(../images/header.jpg); */
+    /* background-size: 100% 100%; */
+    width: 100%;
+    position: absolute;
+    top: 0;  
+}
+
+header img{
+    background-size: cover;
+    max-width: 100%;
+    filter: brightness(85%);
+}
+
+
+
+
+/* NAV */
+
+nav{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    position: sticky;
+    /* top: 493px; */
+    top:0;
+    justify-content: space-evenly;
+    opacity: 0.7;
+    z-index: 10;
+}
+
+
+li{
+    list-style: none;
+    display:inline-block;
+    padding-left:6px;
+    padding-top: 15px;
+}
+
+.logo{
+    padding-top: 15px;
+}
+
+
+/* BODY */
+
+/* main */
+
+main{
+    margin-top: 490px;
+}
+
+
+/* ABOUT US SECTION */
+#aboutus{
+    background-color: rgb(247, 245, 245);
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 200px;
+}
+#pa{
+    color: rgb(112, 112, 112);
+    font-size: 1rem;
+}
+/* p#pi{
+
+} */
+
+/* p>#pi{
+
+} */
+
+
+/* BLOG SECTION */
+
+.blog h2{ 
+    color: white;
+}
+
+.blog{
+    position: relative;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.blog-bg{
+    position: fixed;
+    background-image: url(../images/blog/blog-bg.jpg);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(85%);
+}
+
+.blog-container-xl{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 130px;
+}
+
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.blog-container > div{
+    width: 250px
+}
+
+.blog-container > div > img{
+    max-width: 100%;
+}
+
+/* MENU SECTION */
+
+.sezioneprezzi {
+    width:1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.menu{
+   
+    background-color:#fff;
+    text-align: left;
+
+    
+}
+
+.menu h3{
+    font-weight: bold;
+}
+
+
+.menudiv{
+    text-align: center;
+    
+}
+
+.menudiv p{
+    padding-bottom: 25px;
+    
+}
+
+.prezzimenu p{
+    font-size: 0.8rem;
+    line-height:3;
+    padding-bottom:8px;
+}
+
+.prezzimenu {
+    line-height: 2;
+    padding-left: 40px;
+    
+}
+
+.prezzimenu hr{
+    display: inline-block;
+    margin:0; 
+    padding:0;
+    width:40vw
+}
+
+
+.costo{
+    color: rgb(132, 132, 43);
+    font-size: 0.8rem;
+    position:absolute;
+    right:0;
+    
+    
+}
+
+.titolomenu{
+    padding-bottom:25px;
+}
+
+.titolomenu span{
+    
+    font-size: 1.3rem;
+}
+
+/* NEWS SECTION */
+
+
+
+/* CONTACTS SECTION */
+
+
+
+/* FOOTER */
+#footer{
+    background-color: white;
+    padding: 70px 0px;
+    line-height: 1.4;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+ .block{
+     background-color: rgb(222, 222, 222);
+     text-align: center;
+
+ }
+
+ .container{
+     padding-right: 15px;
+     padding-left: 15px;
+
+ }
+
+ 
+ 
