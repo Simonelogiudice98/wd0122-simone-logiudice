@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/all.css" rel="stylesheet">
     <link href="assets/css/stile.css" rel="stylesheet">
-    
+    <link href="assets/css/responsive.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,60 +23,85 @@
         <div>
     </header>
 
-    <nav> 
+    <!-- Navbar Desktop -->
+
+    <nav id="navdesktop"> 
         <div class="logo">
             <img src="assets/images/logo.png">
         </div>
         
         <div class="tendina">
             <ul>
-                <li class="linea"><a href="#">HOME</a></li>
-                <li class="linea"><a href="#aboutus">ABOUT US</a></li>
-                <li class="linea"><a href="#blog">BLOG</a></li>
-                <li class="linea"><a href="#menu">MENU</a></li>
-                <li class="linea"><a href="#news">NEWS</a></li>
-                <li class="linea"><a href="#contatti">CONTACTS</a></li>
+                <li><p class="underline"><a href="#">HOME</a></p></li>
+                <li><p class="underline"><a href="#aboutus">ABOUT US</a></p></li>
+                <li><p class="underline"><a href="#blog">BLOG</a></p></li>
+                <li><p class="underline"><a href="#menu">MENU</a></p></li>
+                <li><p class="underline"><a href="#news">NEWS</a></p></li>
+                <li><p class="underline"><a href="#contatti">CONTACTS</a></p></li>
             </ul>
         </div>
         
     </nav>
+    
+    <!-- nav-mobile -->
+
+    <nav id="navmobile">
+        
+        <div id="nav-mobile-flex">
+            <div class="logo">
+                <img src="assets/images/logo.png">
+            </div>
+            
+            <label for="aprimenu"><i class="fa-solid fa-bars"></i></label>
+        </div>
+
+        <input id="aprimenu" type="checkbox">
+
+        <ul>
+            <li><p class="underline"><a href="#">HOME</a></p></li>
+            <li><p class="underline"><a href="#aboutus">ABOUT US</a></p></li>
+            <li><p class="underline"><a href="#blog">BLOG</a></p></li>
+            <li><p class="underline"><a href="#menu">MENU</a></p></li>
+            <li><p class="underline"><a href="#news">NEWS</a></p></li>
+            <li><p class="underline"><a href="#contatti">CONTACTS</a></p></li>
+        </ul>
+
+    </nav>
+
+
     <main>
+
         <section class="menu-scorrimento">
+
             <div class="scorrimento">
                 
                 <div class="scorrimento-t">
-                    <h2>FEATURED <span>WORKS</span></h2> 
+                    <h3>FEATURED <span>WORKS</span></h3> 
                     <a class="avanti"><i class="fa-solid fa-angle-right"></i></a>
                 </div>
                 
                 <div id="carosello">
                     
-                    <div>
-                        
-                        <img src="assets/images/slider/slider-img-1.jpg">
-                    
-                   
-                    
-                        <img src="assets/images/slider/slider-img-2.jpg">
-                    
-                    
-                    
-                        <img src="assets/images/slider/slider-img-3.jpg">
-                    
-                    
-                    
-                        <img src="assets/images/slider/slider-img-4.jpg">
-                    
-                    
-                        <img src="assets/images/slider/slider-img-1.jpg">
+
+                    <div class="scroller">
+                        <img class="imgc" src="assets/images/slider/slider-img-1.jpg">
+                        <img class="imgc" src="assets/images/slider/slider-img-2.jpg">
+                        <img class="imgc" src="assets/images/slider/slider-img-3.jpg">
+                        <img class="imgc" src="assets/images/slider/slider-img-4.jpg">
+                        <img class="imgc" src="assets/images/slider/slider-img-1.jpg">
+                        <img class="imgc" src="assets/images/slider/slider-img-2.jpg">
+                        <img class="imgc" src="assets/images/slider/slider-img-3.jpg">
+                        <img class="imgc" src="assets/images/slider/slider-img-4.jpg">
                     </div>
                     
                 </div>
-                
-                
-
-                <span class="punto"><i class="fa-solid fa-circle"></i></span>
-                <span class="punto"><i class="fa-solid fa-circle"></i></span>
+                <div class="punti">
+                    <span class="punto pindietro"><i class="fa-solid fa-circle"></i></span>
+                    <span class="punto pavanti"><i class="fa-solid fa-circle"></i></span>
+                    <!-- <span class="punto punto3"><i class="fa-solid fa-circle"></i></span>
+                    <span class="punto punto4"><i class="fa-solid fa-circle"></i></span> -->
+                    
+                </div>
                 
             </div>
 
@@ -84,7 +110,7 @@
       
         <section id="aboutus">
             <img src="assets/images/cooker-img.png">
-            <h2> Your <span>Restourant's</span>
+            <h2> Your <span>Restaurant's</span>
             <h2> Website Has To Look <span>Good</span>
                 <hr id="hm">
                 <p id="pa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas doloremque, hic iusto ipsum, nemo natus voluptatibus ipsam non repudiandae accusantium placeat assumenda ex repellat ipsa voluptatem, ducimus veritatis. Est, natus.</p>
@@ -192,7 +218,7 @@
                     <h3 class="titolomenu">FEATURED <span>ON THE WEEK</span></h3>
                     <div class="flexprezzi">
                         <div>
-                            <h3>Pancakes n' Suchr</h3>
+                            <h3>Pancakes n' Such</h3>
                         </div>
                          
                         <span class="costo">$25.00</span>
@@ -237,7 +263,7 @@
 
                                 <div class="flexprezzi">
                                     <div>
-                                        <h3>Steak with a garlic and Parsley Risotto
+                                        <h3>Steak with Risotto</h3>
                                     </div>
 
                                     
@@ -260,34 +286,45 @@
                     </div>
 
 
-                    </section>
+        </section>
 
-                    <section id="news">
-                        <form action="post">
+        <section id="news">
 
-                            <h2>SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                            <input type="email" placeholder="Enter your email to subscribe..." id="mail"> 
-                            <input class="subscribe" type="submit" value="SUBSCRIBE" id="subscribe">
-                        </form>    
-                    </section>
-                    <section id="contatti">
-                        <form action="post">
+            <form action="post">
+                <h2>SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                
+                <div class="formflex">
+                    <input type="email" placeholder="Enter your email to subscribe..." id="mail"> 
+                    <input class="subscribe" type="submit" value="SUBSCRIBE" id="subscribe">
 
-                            <div class="condiv">
-                                <h2>our <span>CONTACT US</span></h2>
-                                <hr>
-                                <h3>SIGN UP FOR <span>EMAIL ALERTS</span></h3>
-                                <input type="text" placeholder="  Write your full name here..." class="box">
-                                <br>
-                                <input type="email" placeholder="  Write yuor email address here..." class="box">
-                                <br>
-                                <textarea name="textarea" class="testog" rows="15" cols="121" placeholder=" Write your message here..."></textarea>
-                                <button class="send" href="#" id="buttond">SEND YOUR MESSAGE </button>
-                            </div>
-                        </form>
-                    </section>
+                </div>
+            
+                
+                
+                
+            </form>
+
+        </section>
+
+        <section id="contatti">
+
+            <div class="condiv">
+                <h2>our <span>CONTACT US</span></h2>
+                <hr>
+                <h3>SIGN UP FOR <span>EMAIL ALERTS</span></h3>
+                <form action="post">
+                    <input type="text" placeholder="Write your full name here..." class="box">
+                    <br>
+                    <input type="email" placeholder="Write yuor email address here..." class="box">
+                    <br>
+                    <textarea name="textarea" class="testog" rows="15" cols="121" placeholder="Write your message here..."></textarea>
+                    <button class="send" href="#" id="buttond">SEND YOUR MESSAGE</button>
+                </form>
+            </div>
+
+        </section>
                     
                      
         
@@ -299,17 +336,17 @@
                 
                 <ul>
                 <li>
-                <h4><i class="fa-solid fa-phone"></i><span>      Telefone</span><h4>
+                <h4><i class="fa-solid fa-phone"></i><span> Telefone</span><h4>
                 <p>(000) 123 45678-(000) 123 4567 89<p>
                 </li>
         
                 <li>
-                <h4><i class="fa fa-map-marker-alt"></i><span>     Address</span><h4>
+                <h4><i class="fa fa-map-marker-alt"></i><span> Address</span><h4>
                 <p>2046 Blue Spruce Lane Laurel Canada<p>
                 </li>
         
                 <li>
-                <h4><i class="fa fa-envelope"></i><span>      E mail</span><h4>
+                <h4><i class="fa fa-envelope"></i><span> E mail</span><h4>
                 <p>rest@gmail.com-rest@mail.ru</p>
                 </li>
                 </ul>
@@ -351,10 +388,10 @@
                 <h3>Follow<span>US<span></h3>
                 <ul>
                     
-                    <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-dribbble-square"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-behance-square"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
                 </ul>
 
                 </div>
@@ -363,7 +400,7 @@
 </main>     
        <footer>
            <div class="block">
-               <p>Copyright © 2014 - All Rights Reserved.Design and Developed By<span>Themefisher</span></p>
+               <p>Copyright © 2014 - All Rights Reserved.Design and Developed By <span>Themefisher</span></p>
 
 
 
