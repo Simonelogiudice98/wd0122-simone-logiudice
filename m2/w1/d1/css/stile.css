@@ -1,0 +1,26 @@
+div{
+    display: inline-block;
+}
+
+.calendar{
+    background-color:gainsboro;
+    padding:100px;
+    
+}
+
+.clock{
+    background-image: url(../img/orologio.jpg);
+    background-size: 100% 100%;
+    margin-left:200px;
+    width:200px;
+    height:200px;
+    position:relative;
+    top:100px;
+}
+
+#orologio{
+    position:absolute;
+    left:70px;
+    top:72px;
+    color:white;
+}
