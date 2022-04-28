@@ -1,0 +1,31 @@
+
+
+.tendina{
+    display:none;
+    background-color: aqua;
+    width:200px;
+}
+
+.tendina ul{
+    list-style: none;
+}
+
+section button{
+    border:0px;
+    cursor:pointer;
+}
+
+.visibile{
+    display:block;
+
+}
+
+li{
+    cursor:pointer;
+}
+
+.fatto{
+    opacity:0.5;
+    text-decoration: line-through;
+    color:red;
+}
