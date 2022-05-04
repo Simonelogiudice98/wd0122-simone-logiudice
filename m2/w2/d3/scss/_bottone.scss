@@ -1,0 +1,34 @@
+
+
+
+.showcase-content{
+    a{
+        text-decoration:none;
+        border: 1px solid black;
+        border-radius: 2px;
+        color: $bianco;
+        padding: 10px;
+        
+        
+    }
+}
+
+
+
+.btn-primary{
+    background-color: rgb(26, 101, 186);
+    &:hover{
+        display: inline-block;
+       color:red;
+      transform: scale(1.5);
+    }
+}
+
+.btn-secondary{
+    background-color:rgb(190, 98, 12);
+    &:hover{
+        display: inline-block;
+        color:blue;
+        transform: scale(1.5);
+    }
+}

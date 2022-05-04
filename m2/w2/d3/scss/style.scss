@@ -1,0 +1,36 @@
+@import "variabili";
+
+@import "bottone";
+
+body{
+    margin:0;
+}
+
+header{
+    background-color: $viola;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 45px;
+    
+    
+    li{
+        display:inline-block;
+        padding: 0 5px;
+        a{
+            text-decoration: none;
+            color:$bianco;
+            
+        }
+    }
+}
+
+.showcase-content{
+    display: flex;
+    padding:50px ;
+    align-items: center;
+    
+    
+}

@@ -1,0 +1,42 @@
+.showcase-content a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: white;
+  padding: 10px; }
+
+.btn-primary {
+  background-color: #1a65ba; }
+  .btn-primary:hover {
+    display: inline-block;
+    color: red;
+    transform: scale(1.5); }
+
+.btn-secondary {
+  background-color: #be620c; }
+  .btn-secondary:hover {
+    display: inline-block;
+    color: blue;
+    transform: scale(1.5); }
+
+body {
+  margin: 0; }
+
+header {
+  background-color: rgba(131, 51, 188, 0.861); }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 45px; }
+  nav li {
+    display: inline-block;
+    padding: 0 5px; }
+    nav li a {
+      text-decoration: none;
+      color: white; }
+
+.showcase-content {
+  display: flex;
+  padding: 50px;
+  align-items: center; }
