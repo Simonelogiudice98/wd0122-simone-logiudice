@@ -1,0 +1,81 @@
+@import "variabili";
+
+@import "mixin";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,300;1,400&family=Roboto:wght@400;700&display=swap');
+
+@function set-color($colore){
+    $luminosity : lightness($colore);
+    
+    @if($luminosity >= 50){
+        @return black;
+    }@else{
+        @return white;
+    }
+}
+
+html{
+    @include font
+}
+
+header{
+    
+    #main-menu{
+
+    background-color: rgb(6, 6, 88);
+    border-radius: 4px;
+    border: 1px ridge white;
+
+    ul{
+        li{
+            display: inline-block;
+            text-decoration: none;
+            padding: 5px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+ }
+}
+
+#sidebar{
+    li{
+        list-style: none;
+        padding: 5px;
+    }
+}
+
+#main{
+    display:flex;
+    margin:0 30px;
+
+    article{
+        flex-basis: 75%;
+
+        a{
+            color:$arancio;
+            text-decoration: none;
+        }
+
+        button{
+            background-color:$arancio;
+            color: white;
+            border:1px solid grey;
+            padding:5px;
+        }
+    }
+
+    aside{
+        flex-basis: 25%;
+    }
+}
+
+
+#footer{
+    background-color:rgb(74, 154, 211);
+    height:10vh;
+}
+

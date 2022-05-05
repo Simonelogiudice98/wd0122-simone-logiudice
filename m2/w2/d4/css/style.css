@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,300;1,400&family=Roboto:wght@400;700&display=swap");
+html {
+  font-family: 'Fira Sans', sans-serif;
+  color: #3939aa; }
+
+header #main-menu {
+  background-color: #060658;
+  border-radius: 4px;
+  border: 1px ridge white; }
+  header #main-menu ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px; }
+    header #main-menu ul li a {
+      text-decoration: none;
+      color: white; }
+
+#sidebar li {
+  list-style: none;
+  padding: 5px; }
+
+#main {
+  display: flex;
+  margin: 0 30px; }
+  #main article {
+    flex-basis: 75%; }
+    #main article a {
+      color: orange;
+      text-decoration: none; }
+    #main article button {
+      background-color: orange;
+      color: white;
+      border: 1px solid grey;
+      padding: 5px; }
+  #main aside {
+    flex-basis: 25%; }
+
+#footer {
+  background-color: #4a9ad3;
+  height: 10vh; }
