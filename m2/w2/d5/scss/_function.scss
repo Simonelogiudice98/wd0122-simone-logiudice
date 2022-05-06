@@ -1,0 +1,11 @@
+
+
+@function set-color($sfondo){
+    $luminosity : lightness($sfondo);
+    
+    @if($luminosity <= 50){
+        @return black;
+    }@else{
+        @return white;
+    }
+}
