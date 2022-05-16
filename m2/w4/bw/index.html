@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container" id="contenitore">
+    <div class="row">
+        <div class="col-8">
+
+               <table class="table mt-3">
+               <thead id="thead">
+                   <tr>
+                       <th scope="col">Id</th>
+                       <th scope="col">Nome</th>
+                       <th scope="col">Username</th>
+                       <th scope="col">Email</th>
+                       <div class="row">
+
+                           <th id="aggiungi" scope="col" class="col-12 btn bg-success text-white mb-2 ">Add New</th>
+                       </div>
+                    </tr>
+                </thead>
+                <tbody id="utenti">
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-4 mt-5 aggiungiUtente">
+            <h1>Crea nuovo utente</h1>
+            <form class="d-flex flex-column wrap " action="POST">
+                
+                <h5>Nome</h5>
+                <input id="name" class="col-4" type="text" placeholder="inserisci nome">
+                
+                <h5>Username</h5>
+                <input id="userName" class="col-4" type="text" placeholder="inserisci username">
+                
+                <h5>Mail</h5>
+                <input id="mail" class="col-4" type="mail" placeholder="inserisci mail">
+
+                <button id="invia" class="btn btn-success col-2 mt-1">Invia</button>
+
+            </form>
+            
+
+        </div>
+
+    </div>
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html> 
