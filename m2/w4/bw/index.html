@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-<div class="container" id="contenitore">
-    <div class="row">
-        <div class="col-8">
+            <!-- INTESTAZIONE TABELLA -->
+
+    <div class="container" id="contenitore">
+       <div class="row">
+           <div class="col">
 
                <table class="table mt-3">
                <thead id="thead">
@@ -21,8 +24,8 @@
                        <th scope="col">Username</th>
                        <th scope="col">Email</th>
                        <div class="row">
-
-                           <th id="aggiungi" scope="col" class="col-12 btn bg-success text-white mb-2 ">Add New</th>
+                        <th scope="col" class="col-12 btn bg-success text-white mb-2 " data-bs-toggle="modal" data-bs-target="#exampleModal">Add New</th> 
+                          
                        </div>
                     </tr>
                 </thead>
@@ -34,28 +37,133 @@
             </table>
 
         </div>
-        <div class="col-4 mt-5 aggiungiUtente">
+        <!-- <div  class="col-4 mt-5 aggiungiUtente displayUser">
             <h1>Crea nuovo utente</h1>
-            <form class="d-flex flex-column wrap " action="POST">
-                
-                <h5>Nome</h5>
-                <input id="name" class="col-4" type="text" placeholder="inserisci nome">
-                
-                <h5>Username</h5>
-                <input id="userName" class="col-4" type="text" placeholder="inserisci username">
-                
-                <h5>Mail</h5>
-                <input id="mail" class="col-4" type="mail" placeholder="inserisci mail">
-
-                <button id="invia" class="btn btn-success col-2 mt-1">Invia</button>
-
+            <form class="d-flex  flex-column wrap gap-2" action="POST">
+                <h3>nome</h3>
+                <input class="col-4" id="name" type="text"placeholder="inserisci nome">
+                <h3>username</h3>
+                <input class="col-4" id="userName" type="text"placeholder="inserisci username">
+                <h3>mail</h3>
+                <input class="col-4" id="mail" type="email"placeholder="inserisci email">
+                <button id="invia" class="btn btn-success col-2">invia</button>
             </form>
-            
-
+        </div>
+        <div  class="col-4 mt-5 displayUser modificaUtente">
+            <h1>modifica utente</h1>
+            <form class="d-flex  flex-column wrap gap-2" action="POST">
+                <h3>modifica nome</h3>
+                <input class="col-4" id="name1" type="text"placeholder="inserisci nome">
+                <h3>modifica username</h3>
+                <input class="col-4" id="userName1" type="text"placeholder="inserisci username">
+                <h3>modifica mail</h3>
+                <input class="col-4" id="mail1" type="email"placeholder="inserisci email">
+                <button id="invia1" class="btn btn-warning col-3">modifica</button>
+                <input type="text" id="inputId" class="col">
+            </form>
         </div>
 
+        <div  class="col-4 mt-5 displayUser vediUtente">
+            <h1>vedi utente</h1>
+            
+                <h3>nome: <span id="nomeV"> </span></h3>
+                
+                
+                <h3>Azienda: <span id="azienda"> </span></h3>
+               
+                
+                <h3>address: <span id="indirizzo">   </span></h3>
+                
+                
+                <h3>Telefono: <span id="telefono">   </span></h3>
+                
+                
+        </div> -->
+
+        
+        
+        <!-- MODAL -->
+
+        <!-- MODAL ADD NEW -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Crea nuovo utente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="d-flex flex-column " action="POST">
+        
+                        <h5>Nome</h5>
+                        <input id="name"  type="text" placeholder="inserisci nome">
+        
+                        <h5>Username</h5>
+                        <input id="userName"  type="text" placeholder="inserisci username">
+        
+                        <h5>Mail</h5>
+                        <input id="mail"  type="mail" placeholder="inserisci mail">
+        
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" id="invia" class="btn btn-primary">Invia</button>
+                  <div class="col-12 div-counter"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- MODAL MODIFICA -->
+        
+        
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Crea nuovo utente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="d-flex flex-column " action="POST">
+        
+                        <h5>Nome</h5>
+                        <input id="name1"  type="text" placeholder="inserisci nome">
+        
+                        <h5>Username</h5>
+                        <input id="userName1"  type="text" placeholder="inserisci username">
+        
+                        <h5>Mail</h5>
+                        <input id="mail1"  type="mail" placeholder="inserisci mail">
+        
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" id="modifica" class="btn btn-primary">Invia</button>
+                  <div class="col-12 div-counter"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div style ="width: 200px">
+            <div id="counter">loading</div>
+            <div id="hr"></div>
+            
+        </div>
     </div>
 </div>
-    <script src="js/script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="js/script.js"></script>
 </body>
-</html> 
+</html>
