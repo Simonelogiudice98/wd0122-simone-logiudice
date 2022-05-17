@@ -65,6 +65,7 @@ fetch("http://jsonplaceholder.typicode.com/users")
 
         tbody.append(tr)
 
+        console.log(utente);
     }
     
 })
