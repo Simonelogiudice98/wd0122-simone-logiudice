@@ -10,77 +10,48 @@
 
 </head>
 <body>
-            <!-- INTESTAZIONE TABELLA -->
-
-    <div class="container" id="contenitore">
-       <div class="row">
-           <div class="col">
-
-               <table class="table mt-3">
-               <thead id="thead">
+  
+  <div class="container sticky-top">
+  <nav class="navbar navbar-expand-lg bg-primary ">
+    <div class="container">
+      <h1 class="fst-italic text-white">BUILDWEEK</h1>
+  
+        <form class="d-flex col-6" role="search">
+          <input id="ricerca" class="form-control me-2" type="search" placeholder="ricerca" aria-label="Cerca" data-search>
+          <button id="btnRicerca" class="btn bg-white text-primary fw-bold" type="submit">Cerca</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+  
+  <div class="container" id="contenitore">
+    <!-- INTESTAZIONE TABELLA -->
+    
+    <div class="row">
+      <div class="col ">
+        
+               <table class="table table-striped table-hover align-middle mt-3">
+               <thead id="thead" class="bg-dark text-white">
+                 
                    <tr>
                        <th scope="col">Id</th>
                        <th scope="col">Nome</th>
                        <th scope="col">Username</th>
                        <th scope="col">Email</th>
-                       <div class="row">
-                        <th scope="col" class="col-12 btn bg-success text-white mb-2 " data-bs-toggle="modal" data-bs-target="#exampleModal">Add New</th> 
+                        <th scope="col" ><button class="col-12 btn bg-success text-white"  data-bs-toggle="modal" data-bs-target="#exampleModal"> Add New </button> </th> 
                           
-                       </div>
-                    </tr>
+                      </tr>
+                  
                 </thead>
-                <tbody id="utenti">
+                <tbody class="fs-5 fst-italic" id="utenti">
 
 
 
                 </tbody>
             </table>
 
-        </div>
-        <!-- <div  class="col-4 mt-5 aggiungiUtente displayUser">
-            <h1>Crea nuovo utente</h1>
-            <form class="d-flex  flex-column wrap gap-2" action="POST">
-                <h3>nome</h3>
-                <input class="col-4" id="name" type="text"placeholder="inserisci nome">
-                <h3>username</h3>
-                <input class="col-4" id="userName" type="text"placeholder="inserisci username">
-                <h3>mail</h3>
-                <input class="col-4" id="mail" type="email"placeholder="inserisci email">
-                <button id="invia" class="btn btn-success col-2">invia</button>
-            </form>
-        </div>
-        <div  class="col-4 mt-5 displayUser modificaUtente">
-            <h1>modifica utente</h1>
-            <form class="d-flex  flex-column wrap gap-2" action="POST">
-                <h3>modifica nome</h3>
-                <input class="col-4" id="name1" type="text"placeholder="inserisci nome">
-                <h3>modifica username</h3>
-                <input class="col-4" id="userName1" type="text"placeholder="inserisci username">
-                <h3>modifica mail</h3>
-                <input class="col-4" id="mail1" type="email"placeholder="inserisci email">
-                <button id="invia1" class="btn btn-warning col-3">modifica</button>
-                <input type="text" id="inputId" class="col">
-            </form>
-        </div>
-
-        <div  class="col-4 mt-5 displayUser vediUtente">
-            <h1>vedi utente</h1>
-            
-                <h3>nome: <span id="nomeV"> </span></h3>
-                
-                
-                <h3>Azienda: <span id="azienda"> </span></h3>
-               
-                
-                <h3>address: <span id="indirizzo">   </span></h3>
-                
-                
-                <h3>Telefono: <span id="telefono">   </span></h3>
-                
-                
-        </div> -->
-
-        
+      </div>
         
         <!-- MODAL -->
 
@@ -90,7 +61,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Crea nuovo utente</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Crea Nuovo Utente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -109,7 +80,7 @@
                     
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                   <button type="button" id="invia" class="btn btn-primary">Invia</button>
                   <div class="col-12 div-counter"></div>
                 </div>
@@ -126,7 +97,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Crea nuovo utente</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Modifica Utente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -140,24 +111,56 @@
         
                         <h5>Mail</h5>
                         <input id="mail1"  type="mail" placeholder="inserisci mail">
+
+                        <input class="d-none" id="inputId">
         
                     </form>
                     
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                   <button type="button" id="modifica" class="btn btn-primary">Invia</button>
-                  <div class="col-12 div-counter"></div>
+                  <div class="col-12 div-counter2"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         
+        <!-- MODAL VIEW -->
+
+        <div id="modal3" class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h5>Nome: <span id="nomeV"></span></h5>
+                <h5>Azienda: <span id="azienda"></span></h5>
+                <h5>Indirizzo: <span id="indirizzo"></span></h5>
+                <h5>Telefono: <span id="telefono"></span></h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <div style ="width: 200px">
+
+
+        
+        <div class = "caricamento" style ="width: 200px">
             <div id="counter">loading</div>
             <div id="hr"></div>
+            
+        </div>
+        <div class = "caricamento" style ="width: 200px">
+            <div id="counter2">loading</div>
+            <div id="hr2"></div>
             
         </div>
     </div>
