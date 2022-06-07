@@ -1,0 +1,15 @@
+<h1>Le mie foto preferite</h1>
+<h2>foto che mi piacciono: {{count}}</h2>
+<div class="container">
+
+
+  <div *ngFor="let fotos of foto">
+
+    <img src="{{fotos.thumbnailUrl}}">
+    {{fotos.title}}
+    <button (click)="like()" class="btn btn-primary">Mi piace</button>
+    <button class="btn btn-danger" (click)="elimina(id)">Elimina</button>
+    <hr>
+  </div>
+
+</div>
