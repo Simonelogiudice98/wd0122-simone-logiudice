@@ -1,0 +1,86 @@
+<div class="container">
+  <form (ngSubmit)="submit()" #f="ngForm">
+      <div ngModelGroup="authData" #authGroup="ngModelGroup">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+        #name="ngModel"
+        ngModel name=""
+        ngModel name="name"
+        id="name" type="text"
+       class="form-control" required placeholder="binding">
+       <p
+       [style.color]="'red'"
+       *ngIf="name.invalid && name.touched"
+       >Inserisci il nome</p>
+      </div>
+
+      <div class="form-group">
+        <label for="alterEgo">Aleterego</label>
+        <input
+        #alterEgo="ngModel"
+        ngModel name="alterEgo"
+         id="alterEgo" type="text"
+       class="form-control" required placeholder="binding">
+        <p
+        [style.color]="'red'"
+       *ngIf="alterEgo.invalid && alterEgo.touched"
+       >inserisci l'alterego</p>
+      </div>
+
+      <div class="form-group">
+        <label for="power">Power</label>
+        <input
+        #power="ngModel"
+        ngModel name="power"
+        id="power" type="text"
+      class="form-control" required placeholder="binding">
+        <p
+        [style.color]="'red'"
+       *ngIf="power.invalid && power.touched"
+       >inserisci il potere</p>
+      </div>
+
+      <div class="form-group">
+        <label for="enemy">Enemy</label>
+        <input
+        #enemy="ngModel"
+        ngModel name="enemy"
+        maxlength="10"
+        id="enemy" type="text"
+       class="form-control" placeholder="optional">
+
+      </div>
+
+      <div class="form-group">
+        <label for="planet">Planet</label>
+        <input
+        #planet="ngModel"
+        ngModel name="planet"
+        minlength="5"
+        id="planet" type="text"
+       class="form-control" required placeholder="binding">
+        <p
+        [style.color]="'red'"
+       *ngIf="planet.invalid && planet.touched"
+       >inserisci il pianeta</p>
+      </div>
+
+      <div class="form-group">
+        <label for="weakness">Weakness</label>
+        <input
+        #weakness="ngModel"
+        ngModel name="weakness"
+        id="weakness" type="text"
+       class="form-control" placeholder="optional">
+
+
+      </div>
+
+      <button class="btn btn-primary mx-4 my-4">invia</button>
+
+    </div>
+
+  </form>
+  </div>
