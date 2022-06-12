@@ -1,0 +1,46 @@
+<div class="container text-center">
+  <!-- <div ngModelGroup="authData" #authGroup="ngModelGroup"> -->
+
+<h1>Registrati</h1>
+  <form (ngSubmit)="submit()" #f="ngForm">
+    <div class="row mt-5 form-group">
+
+      <div class="col-8">
+
+        <input
+        id="username" #username="ngModel"
+        ngModel name="username"
+        class="form-control" required
+        type="text" placeholder="Username">
+        <p
+        [style.color]="'red'"
+        *ngIf="username.touched"
+        >inserisci un username valido</p>
+
+      </div>
+
+      <div class="col-8 my-3 form-group">
+
+       <input
+       id="password" #password="ngModel"
+       ngModel name="password"
+       class="form-control" required
+       type="password" placeholder="Password">
+       <p
+       [style.color]="'red'"
+       *ngIf="password.touched"
+       >inserisci una password valida</p>
+
+      </div>
+
+      <div class="col-12 ">
+
+         <button type="submit" class="btn btn-success">Signin</button>
+
+      </div>
+
+    </div>
+  </form>
+
+</div>
+<!-- </div> -->
