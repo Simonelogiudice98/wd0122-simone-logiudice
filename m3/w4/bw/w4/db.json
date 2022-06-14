@@ -1,12 +1,26 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "ciao@ciao.com",
+      "password": "$2a$10$hZVMSfgiasBrgs3NUGcwKOKo07K4W7ObdDSbgR5XxijtQLy1KsHB.",
+      "name": "Roanna Brewer",
+      "surname": "Beard",
+      "username": "lifymiz",
+      "id": 1
+    }
+  ],
   "posts": [
     {
       "id": 1,
       "utente": "Simone",
-      "caption": "fergvegeqwwqqds",
+      "caption": "4cfedsfqdw74563",
+      "liked": false
+    },
+    {
+      "id": 2,
+      "utente": "Mario",
+      "caption": "4cfedsfqdw74563",
       "liked": false
     }
-
   ]
 }

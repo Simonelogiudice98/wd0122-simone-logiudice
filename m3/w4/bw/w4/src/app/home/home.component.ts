@@ -43,8 +43,9 @@ export class HomeComponent implements OnInit {
   }
 
   modificaPost(id:number,caption:string){
-    this.postsSrv.modificaPost(id,{caption:caption}).subscribe((res) =>{console.log(res)}
+    this.postsSrv.modificaPost(id,{caption:caption}).subscribe((res) =>{ this.getPosts()}
     )
-    // this.getPosts()
+    this.edit = !this.edit
+
   }
 }

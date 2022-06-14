@@ -1,0 +1,20 @@
+<ul class="nav" *ngIf="!isUserLogged">
+  <li>
+      <form class="d-flex">
+          <input type="email" class="form-control" placeholder="Email" [(ngModel)]="auth.email" name="email">
+          <input type="password" class="form-control mx-2" placeholder="Password" [(ngModel)]="auth.password" name="password">
+          <button (click)="login()" type="button" class="btn btn-light text-dark me-2">Login</button>
+      </form>
+  </li>
+
+</ul>
+
+<ul class="nav" *ngIf="isUserLogged">
+  <li>
+    <h4 class="me-1">Benvenuto {{name}}</h4>
+  </li>
+
+  <li>
+    <button (click)="logout()" class="btn btn-danger ms-1">Logout</button>
+  </li>
+</ul>
