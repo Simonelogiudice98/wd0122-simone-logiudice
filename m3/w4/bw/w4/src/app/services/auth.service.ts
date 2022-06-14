@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {  Observable,  } from 'rxjs';
-import { IAuthdata } from '../interfaces/iauthdata';
+import {  BehaviorSubject, Observable  } from 'rxjs';
+import {  tap  } from 'rxjs/operators';
+import { IAuthdata, IResponseData } from '../interfaces/iauthdata';
 import { User } from '../interfaces/user';
 
 
@@ -16,9 +17,22 @@ export class AuthService {
 
 
   constructor(private http:HttpClient) { }
+  isUserLogged:boolean = false;
 
-  login(authData:IAuthdata):Observable<IAuthdata>{
-    return this.http.post<IAuthdata>(this.apiUrl, authData)
+  private isLogged = new BehaviorSubject<boolean>(false)
+  loggedObs = this.isLogged.asObservable()
+
+
+  login(authData:IAuthdata){
+    return this.http.post<IResponseData>(this.apiUrl, authData).pipe(
+      tap((res)=>{
+        console.log('login');
+        console.log(res);
+        this.isUserLogged = true;
+        this.isLogged.next(true)
+
+      })
+    )
 
   }
 
@@ -31,7 +45,12 @@ export class AuthService {
   logout(){
     localStorage.removeItem('token')
     localStorage.removeItem('user')
+    this.isLogged.next(false)
   }
+
+  // isUserLogged(){
+  //   return localStorage.getItem('token') =! null && !this.jwtHelper.isTokenExpired(localStorage.getItem('token'))
+  // }
 
 }
 

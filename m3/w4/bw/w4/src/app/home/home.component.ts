@@ -23,14 +23,12 @@ export class HomeComponent implements OnInit {
   getPosts(){
     this.postsSrv.getPosts().subscribe((res) => {
       this.posts = res
-      this.caption = res.map(post =>post.caption)
-      console.log(this.posts);
+
+
     })
   }
 
-  like(){
-    this.liked =  !this.liked;
-  }
+
 
   getPost(id:number){
     this.postsSrv.getPost(id).subscribe(( res:any) => {

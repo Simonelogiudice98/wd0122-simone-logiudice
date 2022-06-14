@@ -1,4 +1,4 @@
-<ul class="nav" *ngIf="!isUserLogged">
+<ul class="nav" *ngIf="!logged">
   <li>
       <form class="d-flex">
           <input type="email" class="form-control" placeholder="Email" [(ngModel)]="auth.email" name="email">
@@ -9,9 +9,9 @@
 
 </ul>
 
-<ul class="nav" *ngIf="isUserLogged">
+<ul class="nav" *ngIf="logged">
   <li>
-    <h4 class="me-1">Benvenuto {{name}}</h4>
+    <h4 class="me-1">Ciao {{name}}</h4>
   </li>
 
   <li>

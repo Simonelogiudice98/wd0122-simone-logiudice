@@ -1,30 +1,13 @@
 <div class="album py-5 bg-light">
     <div class="container">
         <div class="row g-3 ">
-            <div class="col-12" *ngFor="let post of posts; let i = index">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between align-items-start">
-                        <div>
-                          <h3><i class="bi bi-person-circle me-3"></i>{{post.utente}}</h3>
-                          <p *ngIf="!edit">{{post.caption}}</p>
-                          <textarea [(ngModel)]="caption[i]" class="form-control" *ngIf="edit" cols="100" rows="5"></textarea>
-                          <button *ngIf="edit" (click)="modificaPost(post.id,caption[i])" class="btn btn-warning">Edit</button>
-                        </div>
-                        <button class="pippo" (click)="editPost(post.id)" type="button"><i class="bi bi-pencil-square "></i></button>
-                      </div>
 
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button class="pippo" (click)="like()" *ngIf="!liked" type="button"><i class="bi bi-heart"></i></button>
-                              <button class="pippo" (click)="like()" *ngIf="liked"  type="button"><i class="bi bi-heart-fill text-danger"></i></button>
+          <app-post-details *ngFor="let post of posts" [post] = "post"></app-post-details>
 
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
+            <div class="col-12" *ngFor="let post of posts; let i = index;">
+
                 </div>
             </div>
         </div>
     </div>
-</div>
+

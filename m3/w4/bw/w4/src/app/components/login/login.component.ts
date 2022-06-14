@@ -9,7 +9,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  isUserLogged:boolean = false;
+  logged:boolean = this.authService.isUserLogged
   name:string = '';
 
   auth:IAuthdata = {
@@ -20,18 +20,22 @@ export class LoginComponent implements OnInit {
   constructor(private authService:AuthService) { }
 
   ngOnInit(): void {
+    this.authService.loggedObs.subscribe((res:boolean)=> {
+      this.logged = res;
+    })
     this.getName()
   }
 
   login(){
     this.authService.login(this.auth).subscribe((res:any)=>{
       this.authService.logUser(res.accessToken , res.user)
-      this.isUserLogged = true ;
+      // this.authService.isUserLogged = true ;
+      // this.logged =  this.authService.isUserLogged
     });
   }
   logout(){
     this.authService.logout()
-    this.isUserLogged = true;
+
   }
   getName(){
     let user:any = localStorage.getItem('user')
