@@ -22,8 +22,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.authService.loggedObs.subscribe((res:boolean)=> {
       this.logged = res;
+      this.getName()
     })
-    this.getName()
   }
 
   login(){
