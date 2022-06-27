@@ -8,11 +8,22 @@ import { Loader } from "@googlemaps/js-api-loader"
 })
 export class HomeComponent implements OnInit {
 
-
+   strLat:any;
+   strLng:any;
 
   constructor() { }
 
-  ngOnInit(){}
+  ngOnInit(){
+    if(!navigator.geolocation){
+      console.log('location is not supported');
+    }
+    navigator.geolocation.getCurrentPosition((position)=>{
+      console.log(
+        this.strLat = position.coords.latitude, this.strLng = position.coords.longitude
+        );
+
+      })
+    }
 
   ngAfterViewInit(): void {
     let loader = new Loader({
@@ -24,7 +35,7 @@ export class HomeComponent implements OnInit {
       if(mappa){
 
         new google.maps.Map(mappa,{
-          center: {lat:43.7705637, lng:12.0620695},
+          center: {lat: this.strLat, lng: this.strLng},
           zoom: 10
 
         })
