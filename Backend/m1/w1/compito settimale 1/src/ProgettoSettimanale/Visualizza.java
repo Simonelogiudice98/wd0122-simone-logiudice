@@ -1,9 +1,0 @@
-package ProgettoSettimanale;
-//CREIAMO UN'INTERFACCIA PER IMG E VIDEO
-public interface Visualizza {
-	//CREIAMO UN METODO SHOW() CHE NEL CASO DELLE IMMAGINI CE LE MOSTRERà IN CONSOLE, NEL CASO DEI VIDEO MOSTRERà I DETTAGLI
-	public void show();
-	//CREIAMO DEI METODI PER LA LUMINOSITà DEGLI ELEMENTI MULTIMEDIALI
-	public void AumentaL();
-	public void DiminuisciL();
-}
